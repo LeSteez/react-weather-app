@@ -9,10 +9,10 @@ export default function App() {
                 <Weather defaultCity="Dallas" />
                 <footer>
                     Coded by <a href="https://carreauxcreativ.com"
-                                target="_blank">Julicia</a> | Open-sourced on
+                                target="_blank" rel="noreferrer">Julicia</a> | Open-sourced on
                     <a
                     href="https://github.com/LeSteez/react-weather-app"
-                    target="_blank">Github</a>
+                    target="_blank" rel="noreferrer">Github</a>
                 </footer>
             </div>
         </div>
