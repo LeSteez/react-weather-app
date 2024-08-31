@@ -16,8 +16,7 @@ export default function FormattedDate(props) {
     let currentTime = new Date();
     let options = {timeStyle: 'short', hour12: true};
     let timeString = currentTime.toLocaleTimeString('en-US', options);
-    if (minutes < 10) {
-        minutes = `0${minutes}`;
-    }
+
+
     return `${day} ${timeString}`;
 }
