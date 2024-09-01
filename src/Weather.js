@@ -3,7 +3,6 @@ import "./Weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
-import WeatherIcon from "./WeatherIcon";
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ready: false});
@@ -40,6 +39,7 @@ export default function Weather(props) {
     function search() {
         const apiKey = "otb198570afbd1823c32f524f4467bab";
         let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
+
         axios.get(apiUrl).then(handleResponse);
     }
 
